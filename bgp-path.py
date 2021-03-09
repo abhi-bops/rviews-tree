@@ -6,7 +6,7 @@ import itertools
 import socket
 import sys
 import argparse
-from cgi import escape
+from html import escape
 from copy import deepcopy
 import ipaddress
 import copy
@@ -227,7 +227,7 @@ network or for ip addresses and gives the ASN names for the ASnumbers""")
     parser.add_argument('-n', '--hop-count', dest='hops', type=int, help='Count of BGP hops to be displayed', required=True)
 
     parser.add_argument('--graph', dest='graph', action='store_true', help='Provides a dot file that can be used to create a graph')
-    parser.add_argument('--ascii_tree', dest='ascii_tree', action='store_true', help="creates an ascii tree of the routes")
+    parser.add_argument('--ascii-tree', dest='ascii_tree', action='store_true', help="creates an ascii tree of the routes")
     
     args = parser.parse_args()
 
