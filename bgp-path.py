@@ -1,4 +1,4 @@
-#!/home/noccsync/nocc/bin/python
+#!/usr/bin/python3
 
 import pexpect
 import re
